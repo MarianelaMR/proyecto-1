@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marianela Mercedes R | Ingeniera en Sistemas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function() {
+            const applyTheme = () => {
+                const preferredTheme = localStorage.getItem('theme');
+                const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (preferredTheme === 'dark' || (!preferredTheme && systemPrefersDark)) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            };
+            applyTheme();
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- ============== MENÚ DE NAVEGACIÓN =========== -->
+    <!-- ============================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MMR | Portfolio</a>
+            <button id="theme-toggle" class="btn theme-toggle-btn ms-auto me-2"><i class="fas fa-sun"></i></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">🔥 Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">🎓 Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">🚀 Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">🎬 Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">📩 Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mt-5 pt-5">
+
+        <!-- ============================================= -->
+        <!-- ================= SECCIÓN PERFIL ============= -->
+        <!-- ============================================= -->
+        <section id="perfil" class="text-center py-5">
+            <h2 class="section-title">Ingeniera en Sistemas</h2>
+            <img src="https://dummyimage.com/150x150/000000/ff0000.png&text=MMR" alt="Iniciales de Marianela Mercedes R" class="profile-img my-4">
+            <h3>Marianela Mercedes R</h3>
+            <p class="bio">💼 Auxiliar Contable | 💻 Ing. en Sistemas Computacionales | 🗂️ Asistente Administrativa | 👩‍💻 Programadora | 👩‍🏫 Ayudante de Maestra</p>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- ============== SECCIÓN EXPERIENCIA ========== -->
+        <!-- ============================================= -->
+        <section id="experiencia" class="py-5">
+            <h2 class="section-title text-center">Experiencia Profesional</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4"><div class="card animated-card"><div class="card-body"><h5 class="card-title">Asistente Administrativa</h5><h6 class="card-subtitle mb-2 text-muted">HotelServis (2023-2025)</h6><p class="card-text">Gestión de operaciones diarias, optimización de procesos y soporte logístico.</p></div></div></div>
+                <div class="col-md-4"><div class="card animated-card"><div class="card-body"><h5 class="card-title">Auxiliar Contable</h5><h6 class="card-subtitle mb-2 text-muted">Corredor de la Nuñez de Caceres (2023-2024)</h6><p class="card-text">Manejo de registros financieros, conciliaciones y reportes, con gran atención al detalle.</p></div></div></div>
+                <div class="col-md-4"><div class="card animated-card"><div class="card-body"><h5 class="card-title">Ayudante de Maestra</h5><h6 class="card-subtitle mb-2 text-muted">La Aldea del Saber</h6><p class="card-text">Apoyo en la planificación educativa y desarrollo de actividades para un aprendizaje positivo.</p></div></div></div>
+            </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- ============== SECCIÓN PROYECTOS ============ -->
+        <!-- ============================================= -->
+        <section id="proyectos" class="py-5">
+            <h2 class="section-title text-center">Proyectos</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4"><div class="card animated-card"><img src="https://images.pexels.com/photos/4761793/pexels-photo-4761793.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Aplicación Fitness"><div class="card-body text-center"><h5>Desarrollo de Aplicación Fitness</h5><p class="card-text">Una app para seguimiento de rutinas de ejercicio y planes de nutrición.</p><a href="#" class="btn btn-primary-custom">Ver Proyecto</a></div></div></div>
+                <div class="col-md-4"><div class="card animated-card"><img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Desarrollo de Juego"><div class="card-body text-center"><h5>Desarrollo de Juego</h5><p class="card-text">Un juego interactivo 2D basado en navegador con JavaScript.</p><a href="#" class="btn btn-primary-custom">Ver Proyecto</a></div></div></div>
+                <div class="col-md-4"><div class="card animated-card"><img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Aplicación para Chicas"><div class="card-body text-center"><h5>App de Comunidad Femenina</h5><p class="card-text">Una plataforma de recursos para el empoderamiento personal.</p><a href="#" class="btn btn-primary-custom">Ver Proyecto</a></div></div></div>
+            </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- =============== SECCIÓN VIDEO ============== -->
+        <!-- ============================================= -->
+        <section id="videos" class="py-5">
+            <h2 class="section-title text-center">Video Destacado</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <!-- CONTENEDOR DE VIDEO INTERACTIVO -->
+                    <div class="video-card-interactive">
+                        <!-- 1. La miniatura del video (visible al inicio) -->
+                        <img src="https://img.youtube.com/vi/MJB4ztuTdeE/hqdefault.jpg" class="video-thumbnail" alt="Miniatura del video de Teodoro Reyes - Ileso">
+                        
+                        <!-- 2. El botón de play superpuesto -->
+                        <div class="play-button-overlay">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+
+                        <!-- 3. El contenedor del iframe (oculto al inicio) -->
+                        <div class="video-container" style="display: none;">
+                            <iframe src="https://www.youtube.com/embed/MJB4ztuTdeE?si=gG6UJtGKvweTlHw1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Concepto del video -->
+                    <div class="video-concept text-center mt-3">
+                        <h5 class="video-title">Ausente - Amennazy ft Eladio</h5>
+                        <p class="video-description">Disfruta de este gran éxito, una cancion, un sentimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- ============== SECCIÓN CONTACTO ============= -->
+        <!-- ============================================= -->
+        <section id="contacto" class="py-5">
+            <h2 class="section-title text-center">Contacto</h2>
+            <div class="row justify-content-center mt-4"><div class="col-md-6"><form><div class="mb-3"><input type="text" class="form-control" placeholder="Tu Nombre"></div><div class="mb-3"><input type="email" class="form-control" placeholder="Tu Email"></div><div class="mb-3"><textarea class="form-control" rows="4" placeholder="Tu Mensaje"></textarea></div><div class="text-center"><button type="submit" class="btn btn-primary-custom">Enviar Mensaje</button></div></form></div></div>
+        </section>
+    </main>
+
+    <!-- ============================================= -->
+    <!-- ================== FOOTER =================== -->
+    <!-- ============================================= -->
+    <footer class="text-center py-4">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/marianela-mercedes-ramirez-19a457177" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/lanana.mercedes" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/maryr06_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="mt-3">© 2024 Marianela Mercedes R. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
